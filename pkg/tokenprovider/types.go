@@ -16,7 +16,8 @@ type Config struct {
 
 // JwtTokenConfig is the configuration for using JWT to fetch tokens.
 type JwtTokenConfig struct {
-	Email      string
-	PrivateKey []byte
-	URI        string
+	Email          string
+	PrivateKey     []byte
+	URI            string
+	TargetAudience string
 }

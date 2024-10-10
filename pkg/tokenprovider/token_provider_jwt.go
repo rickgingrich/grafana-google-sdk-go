@@ -61,7 +61,6 @@ func NewJwtIdentityTokenProvider(cfg Config) TokenProvider {
 				Email:         cfg.JwtTokenConfig.Email,
 				PrivateKey:    cfg.JwtTokenConfig.PrivateKey,
 				TokenURL:      cfg.JwtTokenConfig.URI,
-				Scopes:        cfg.Scopes,
 				Subject:       cfg.JwtTokenConfig.Email,
 				Expires:       time.Hour,
 				PrivateClaims: privateClaims,
